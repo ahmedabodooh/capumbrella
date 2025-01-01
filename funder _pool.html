@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>funder pool</title>
-    
-    <link rel="icon" type="image/x-icon" href="./assets/img/logotaba.png">
+    <title>funder_pool</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logotaba.png">
     <!-- Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,10 +18,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
- <!-- header start -->
+    <!-- header start -->
     <!-- Start of Top Bar -->
     <div class="container-fluid">
         <div class="row align-items-center top-bar animate-from-top">
@@ -63,7 +62,7 @@
             <nav class="navbar navbar-expand-lg navbar-light animate-from-bottom">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo.png" alt="logo" srcset="">
+                    <img src="/assets/img/logo.png" alt="logo">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -71,7 +70,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Explore</a>
+                        <a class="nav-link" href="#">Explore</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Investors</a>
@@ -83,17 +82,28 @@
                         <a class="nav-link" href="#">Market Place</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex align-items-center">
                       <input class="search-input" type="search" placeholder="Search here..." aria-label="Search">
+                      <!-- زر للشاشات الكبيرة -->
                       <button class="nav-bar-btn">
                         <a href="https://yourlink3.com">
-                            Get Stared
+                          Get Started
                         </a>
-                    </button>
+                      </button>
                     </form>
+                    <!-- زر للشاشات الصغيرة -->
+                    <button class="top-bar-btn-center d-block d-lg-none mt-3 mx-auto">
+                        <a href="https://yourlink2.com" class="d-flex justify-content-center align-items-center text-decoration-none">
+                          Activated Now &nbsp;
+                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="..." fill="#C9C9C9"/>
+                          </svg>
+                        </a>
+                      </button>                      
                   </div>
                 </div>
               </nav>
+              
         <!-- </div> -->
         <!-- nav bar EN -->
     <!-- header End -->
@@ -138,7 +148,7 @@
                 </div>
                 <p class="text2 text1 mrt mt-5">
                     <span class="number">
-                        2<sup>nd</sup>
+                        2<sup class="light-text-color2">nd</sup>
                     </span> <br>
                     Round
                 </p>
@@ -314,7 +324,7 @@
 <!-- section three End  -->
 
 <!-- section charts start  -->
-<div class="container mt-5 mb-5 animate-from-inside">
+<div class="container mt-5 mb-5">
     <div class="row justify-content-center">
         <div class="col-md-4 Propsals">
             <div class="row head-cahrt">
@@ -661,15 +671,24 @@
 <!-- section five start  -->
 
 <div class="container">
-    <header class="header-filter animate-from-inside">
-        <h1>Portfolio</h1>
-        <div class="filter-links">
-            <a href="#" data-filter="all" class="active">All</a>
-            <a href="#" data-filter="tech">Propsals</a>
-            <a href="#" data-filter="biotech">Project</a>
-            <a href="#" data-filter="finance"> operation</a>
+    <header class="header-filter animate-from-inside position-relative">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <h1>Portfolio</h1>
+            </div>
+            <div class="col-auto">
+              <div class="filter-links d-flex gap-2">
+                <a href="#" data-filter="all" class="active">All</a>
+                <a href="#" data-filter="tech">Proposals</a>
+                <a href="#" data-filter="biotech">Project</a>
+                <a href="#" data-filter="finance">Operation</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
+      
     
     <div class="content mb-5">
         <!-- Only show these links when "All" is clicked -->
@@ -693,7 +712,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     
         <!-- Content items for different categories -->
@@ -720,7 +738,7 @@
                         <!-- Repeatable Product -->
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -734,7 +752,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -745,7 +763,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -759,7 +777,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -770,7 +788,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -784,7 +802,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -795,7 +813,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -809,7 +827,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -820,7 +838,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -834,7 +852,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -849,6 +867,25 @@
             </div>
             
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
         </div>
         <div class="item tech hidden">
@@ -871,7 +908,7 @@
                         <!-- Repeatable Product -->
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -885,7 +922,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -896,7 +933,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -910,7 +947,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -921,7 +958,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -935,7 +972,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -946,7 +983,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -960,7 +997,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -971,7 +1008,7 @@
                         </div>
                         <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -985,7 +1022,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1018,11 +1055,11 @@
             
                 <!-- Slider Products -->
                 <div class="slider-wrapper">
-                    <div class="slider-products third-slider-products container slider-product2">
+                    <div class="slider-products third-slider-products slider-product2 container">
                         <!-- Repeatable Product -->
-                        <div class="slider-product ">
+                        <div class="slider-product">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1036,7 +1073,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1047,7 +1084,7 @@
                         </div>
                         <div class="slider-product ">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1061,7 +1098,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1072,7 +1109,7 @@
                         </div>
                         <div class="slider-product ">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1086,7 +1123,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1097,7 +1134,7 @@
                         </div>
                         <div class="slider-product ">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1111,7 +1148,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1122,7 +1159,7 @@
                         </div>
                         <div class="slider-product ">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1136,7 +1173,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1147,7 +1184,7 @@
                         </div>
                         <div class="slider-product ">
                             <div class="product-container">
-                                <img src="./assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
+                                <img src="/assets/img/section-4-imf.png" class="slider-2" alt="Product Image">
                                 <div class="product-info">
                                     <h5>Spare parts project</h5>
                                     <h5 class="price">250$</h5>
@@ -1161,7 +1198,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <div class="product-action">
@@ -1224,7 +1261,7 @@
                             <div class="product-container4">
                                 <!-- Video Thumbnail with Play Icon -->
                                 <div class="video-thumbnail4" id="videoThumbnail4">
-                                    <img src="./assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
+                                    <img src="/assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
                                     <span class="play-icon4 material-symbols-outlined">play_arrow</span>
                                 </div>
                                 <div class="product-info">
@@ -1240,7 +1277,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <!-- <div class="product-action">
@@ -1253,7 +1290,7 @@
                             <div class="product-container4">
                                 <!-- Video Thumbnail with Play Icon -->
                                 <div class="video-thumbnail4" id="videoThumbnail4">
-                                    <img src="./assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
+                                    <img src="/assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
                                     <span class="play-icon4 material-symbols-outlined">play_arrow</span>
                                 </div>
                                 <div class="product-info">
@@ -1269,7 +1306,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <!-- <div class="product-action">
@@ -1282,7 +1319,7 @@
                             <div class="product-container4">
                                 <!-- Video Thumbnail with Play Icon -->
                                 <div class="video-thumbnail4" id="videoThumbnail4">
-                                    <img src="./assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
+                                    <img src="/assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
                                     <span class="play-icon4 material-symbols-outlined">play_arrow</span>
                                 </div>
                                 <div class="product-info">
@@ -1298,7 +1335,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <!-- <div class="product-action">
@@ -1311,7 +1348,7 @@
                             <div class="product-container4">
                                 <!-- Video Thumbnail with Play Icon -->
                                 <div class="video-thumbnail4" id="videoThumbnail4">
-                                    <img src="./assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
+                                    <img src="/assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
                                     <span class="play-icon4 material-symbols-outlined">play_arrow</span>
                                 </div>
                                 <div class="product-info">
@@ -1327,7 +1364,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <!-- <div class="product-action">
@@ -1340,7 +1377,7 @@
                             <div class="product-container4">
                                 <!-- Video Thumbnail with Play Icon -->
                                 <div class="video-thumbnail4" id="videoThumbnail4">
-                                    <img src="./assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
+                                    <img src="/assets/img/imgsection6.png" class="slider-24" alt="Video Thumbnail">
                                     <span class="play-icon4 material-symbols-outlined">play_arrow</span>
                                 </div>
                                 <div class="product-info">
@@ -1356,7 +1393,7 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-logo d-flex pr-logo">
-                                    <img src="./assets/img/logo-project-section-4.jpeg" alt="">
+                                    <img src="/assets/img/logo-project-section-4.jpeg" alt="">
                                     <h6 class="mt-2 name">ALPHAINVEST<br><span class="location light-text-color">Saudi Arabia</span></h6>
                                 </div>
                                 <!-- <div class="product-action">
@@ -1373,7 +1410,7 @@
                     <!-- Add the correct onclick function to close the popup -->
                     <button class="close-popup4" onclick="closeVideoPopup4()">×</button>
                     <video id="videoPlayer4" controls>
-                        <source src="./assets/videos/7579564-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                        <source src="/assets/videos/7579564-uhd_4096_2160_25fps.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     </div>
@@ -1403,7 +1440,7 @@
         </div>
     
         <!-- Slider Products -->
-        <div class="slider-wrapper container">
+        <div class="slider-wrapper container pt-5">
             <div class="slider-products5 container slider-product2" id="slider-products5">
                 <!-- Repeatable Product -->
                 <div class="slider-product Customer-Feedback">
@@ -1416,7 +1453,7 @@
                     </p>
                     
                     <div class="product-logo d-flex pr-logo mt-5 fed pt-3">
-                        <img src="./assets/img/person1.jpeg" alt="">
+                        <img src="/assets/img/person1.jpeg" alt="">
                         <h6 class="mt-2 name">John Doe<br><span class="location light-text-color">Designer</span></h6>
                     </div>
                 </div>
@@ -1430,7 +1467,7 @@
                     </p>
                     
                     <div class="product-logo d-flex pr-logo mt-5 fed pt-3">
-                        <img src="./assets/img/person1.jpeg" alt="">
+                        <img src="/assets/img/person1.jpeg" alt="">
                         <h6 class="mt-2 name">John Doe<br><span class="location light-text-color">Designer</span></h6>
                     </div>
                 </div>
@@ -1444,7 +1481,7 @@
                     </p>
                     
                     <div class="product-logo d-flex pr-logo mt-5 fed pt-3">
-                        <img src="./assets/img/person1.jpeg" alt="">
+                        <img src="/assets/img/person1.jpeg" alt="">
                         <h6 class="mt-2 name">John Doe<br><span class="location light-text-color">Designer</span></h6>
                     </div>
                 </div>
@@ -1458,7 +1495,7 @@
                     </p>
                     
                     <div class="product-logo d-flex pr-logo mt-5 fed pt-3">
-                        <img src="./assets/img/person1.jpeg" alt="">
+                        <img src="/assets/img/person1.jpeg" alt="">
                         <h6 class="mt-2 name">John Doe<br><span class="location light-text-color">Designer</span></h6>
                     </div>
                 </div>
@@ -1481,7 +1518,7 @@
                                         This text can include multiple paragraphs or any additional information you'd like to present.
                                     </p>
                                     <div class="product-logo d-flex pr-logo mt-5 fed pt-3">
-                                        <img src="./assets/img/person1.jpeg" alt="">
+                                        <img src="/assets/img/person1.jpeg" alt="">
                                         <h6 class="mt-2 name">John Doe<br><span class="location light-text-color">Designer</span></h6>
                                     </div>
                                 </div>
@@ -1698,127 +1735,145 @@
 </div>
 <!-- section Eight end -->
 
-     <!-- footer start  -->
-     <div class="container-fluid footer">
-        <div class="row animate-from-bottom">
-            <div class="col-md-3 footer-col-1">
-                <img src="./assets/img/56e1d93e8d66136dd4c2cde997e19d77.png" alt="" srcset="">
-                <p>We strive to build long-term relationships with our clients based</p>
-                <a href="">
-                    <i class="fa-brands fa-facebook icons"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin icons"></i>
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-youtube icons"></i>
-                </a>
-            </div>
-            <div class="col-md-1 mt-5">
-                <h3>Explore</h3>
-                <a href="">About us</a>
-                <a href="">Get in touch</a>
-                <a href="">News</a>
-            </div>
-            <div class="col-md-1 mt-5 Markets">
-                <h3>Markets</h3>
-                <a href="">Businesses</a><br>
-                <a href="">Investment</a><br>
-                <a href="">Pre sale</a><br>
-                <button class="main-btn-light">
-                    <a href="#">
-                        raised fund
-                    </a>
-                </button>
-            </div>
-            <div class="col-md-1 mt-5 Markets">
-                <h3>Explore</h3>
-                <a href="">About us</a><br>
-                <a href="">Careers</a><br>
-                <a href="">Press</a><br>
-                <button class="main-btn-dark-2">
-                    <a href="https://yourlink3.com">
-                        Get Stared
-                    </a>
-                </button>
+                        <!-- footer start  -->
+                        <div class="container-fluid footer">
+                            <div class="row animate-from-bottom">
+                                <div class="col-md-3 footer-col-1">
+                                    <img src="/assets/img/56e1d93e8d66136dd4c2cde997e19d77.png" alt="" srcset="">
+                                    <p>We strive to build long-term relationships with our clients based</p>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook icons"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin icons"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube icons"></i>
+                                    </a>
+                                </div>
 
-            </div>
-            <div class="col-md-1 mt-5">
-                <h3>Explore</h3>
-                <a href="">About us</a>
-                <a href="">Careers</a>
-                <a href="">Press</a>
-            </div>
-            <div class="col-md-3 mt-5 letter">
-                <h3>news letter</h3>
-                <p>
-                    Looking for lucrative investment returns? We offer you diverse and 
-                </p>
-                <div class="d-flex">
-                    <input type="text" placeholder="Search here" class="input-footr mb-4">
-                    <button class="btn-footer mb-4">
-                        Get Stared
-                    </button>
-                </div>
-                <a href="" class="contact">
-                    Contact Us
-                </a> <br>
-                <a href="">
-                    <i class="fa-solid fa-envelope"></i>
-                    admin.huss@gmail.com
-                </a> <br>
-                <a href="">
-                    <i class="fa-solid fa-phone"></i>
-                    123456789
-                </a>
-            </div>
-        </div>
-        <div class="row footer-tow">
-            <div class="col-md-12 animate-from-bottom">
-                <p>
-                    Eureeca Limited is authorised and regulated by the Financial Conduct Authority in the UK (No. 624555). Eureeca SEA is authorised and regulated by the Securities Commission in Malaysia as a registered electronic facility (Equity Crowdfunding Platform) under s34 of the Capital Markets and Services Act 2007. We are authorised and regulated by the UK FCA to arrange and safeguard investments and to hold your client funds in our segregated client accounts
-                </p>
-            </div>
-        </div>
-            <div class="row">
-            <div class="col-md-2 ">
-                <a href="">
-                    Risk Disclosure
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="">
-                    Terms of Use
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="">
-                    Privacy Policy
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="./funder _pool.html">
-                    Cookie Policy
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="">
-                    Investor Terms of Business
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mt-5 dev">
-                <p>Copyright © Capumbrella Software Company. All rights reserved.
-                </p>
-                <p>
-                    Developed by 
-                    <a href="https://5starcode.site/">5starcode</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- footer End  -->
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-3 mt-5 col-6">
+                                            <h3>Explore</h3>
+                                            <a href="">About us</a><br>
+                                            <a href="">Get in touch</a><br>
+                                            <a href="">News</a><br>
+                                        </div>
+                                        <div class="col-md-3 mt-5 col-6" id="markets-section">
+                                            <h3>Markets</h3>
+                                            <a href="">Businesses</a><br>
+                                            <a href="">Investment</a><br>
+                                            <a href="">Pre sale</a><br>
+                                            <!-- الأزرار في الشاشات الكبيرة فقط -->
+              
+                                          </div>
+                                          
+                                          <div class="col-md-3 mt-5 col-6" id="explore-section">
+                                            <h3>Explore</h3>
+                                            <a href="">About us</a><br>
+                                            <a href="">Careers</a><br>
+                                            <a href="">Press</a><br>
+                                  
+                                          </div>
+                                          
+                                        <div class="col-md-3 mt-5 col-6">
+                                            <h3>Explore</h3> <br>
+                                            <a href="">About us</a> <br>
+                                            <a href="">Careers</a> <br>
+                                            <a href="">Press</a> <br>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-12 justify-content-center d-flex">
+                                            <button class="main-btn-light2">
+                                                <a href="#" class="link-raised">Raised Fund</a>
+                                              </button>
+                                            <button class="main-btn-dark-2">
+                                                <a href="https://yourlink3.com">Get Started</a>
+                                              </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    
+
+
+
+
+                                <div class="col-md-3 mt-5">
+                                    <h3>news letter</h3>
+                                    <p>
+                                        Looking for lucrative investment returns? We offer you diverse and 
+                                    </p>
+                                    <div class="d-flex">
+                                        <input type="text" placeholder="Search here" class="input-footr mb-4">
+                                        <button class="btn-footer mb-4">
+                                            Get Stared
+                                        </button>
+                                    </div>
+                                    <a href="" class="contact">
+                                        Contact Us
+                                    </a> <br>
+                                    <a href="">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        admin.huss@gmail.com
+                                    </a> <br>
+                                    <a href="">
+                                        <i class="fa-solid fa-phone"></i>
+                                        123456789
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                            <div class="row footer-tow">
+                                <div class="col-md-12 animate-from-bottom">
+                                    <p>
+                                        Eureeca Limited is authorised and regulated by the Financial Conduct Authority in the UK (No. 624555). Eureeca SEA is authorised and regulated by the Securities Commission in Malaysia as a registered electronic facility (Equity Crowdfunding Platform) under s34 of the Capital Markets and Services Act 2007. We are authorised and regulated by the UK FCA to arrange and safeguard investments and to hold your client funds in our segregated client accounts
+                                    </p>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-2 ">
+                                    <a href="">
+                                        Risk Disclosure
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="">
+                                        Terms of Use
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="">
+                                        Privacy Policy
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="./funder _pool.html">
+                                        Cookie Policy
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="./funder _pool.html">
+                                        Investor Terms of Business
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mt-5 dev">
+                                    <p>Copyright © Capumbrella Software Company. All rights reserved.
+                                    </p>
+                                    <p>
+                                        Developed by 
+                                        <a href="https://5starcode.site/">5starcode</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer End  -->
 <!-- Custom JS -->
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -1826,7 +1881,7 @@
 
 <!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="./assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 <script>
 let circularProgress = document.querySelector(".circular-progress"),
 progressValue = document.querySelector(".progress-value");
@@ -2386,9 +2441,9 @@ function highlightText(text, searchTerm) {
 }
 
 // -----------------------------
-const chartData1 = [60, 15, 90, 100]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الأول
-const chartData2 = [45, 75, 30, 20]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الثاني
-const chartData3 = [55, 85, 30, 80]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الثالث
+const chartData1 = [60, 15, 90, 90]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الأول
+const chartData2 = [45, 35, 40, 20]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الثاني
+const chartData3 = [55, 85, 90, 10]; // هذه هي القيم التي ستحصل عليها من الباك إند للقسم الثالث
 
 // القسم الأول
 const charts1 = document.querySelectorAll('.chart-container1 .chart');

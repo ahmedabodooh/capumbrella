@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logotaba.png">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/profile.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body class="profile-body">
+    <!-- header start -->
+    <!-- Start of Top Bar -->
+    <div class="container-fluid top-bar-bar">
+        <div class="row align-items-center top-bar animate-from-top">
+            <!-- Left Side Content -->
+            <div class="col-md-5 d-flex  top-bar-btn-2">
+                <button class="profile-top-bar-btn-dark">
+                    <a href="https://yourlink1.com">
+                        <span class="material-symbols-outlined">
+                            credit_card
+                        </span>
+                        fast deposit
+                    </a>
+                </button>
+                <button class="profile-top-bar-btn-light">
+                    <a href="https://yourlink1.com">
+                        <span class="material-symbols-outlined">
+                            credit_card
+                        </span>
+                        fast deposit
+                    </a>
+                </button>
+                <button class="profile-top-bar-btn-green">
+                    <span class="material-symbols-outlined">
+                        domain_verification
+                        </span>
+                    <a href="https://yourlink2.com">
+                        verify
+                    </a>
+                </button>
+            </div>
+            <!-- Center Content -->
+            <div class="col-md-2 d-flex justify-content-center ">
+
+            </div>
+            <!-- Right Side Content -->
+            <div class="col-md-5 d-flex text-end">
+                <div class="notification-container mt-2">
+                    <div class="notification-icon" onclick="toggleNotifications()">
+                        <span class="material-symbols-outlined notifi">notifications</span>
+                        <span class="notification-count" id="notificationCount">3</span>
+                    </div>
+                    <div class="notification-list" id="notificationList">
+                        <div class="notification-header">
+                            <span class="close-icon" onclick="toggleNotifications()">×</span>
+                        </div>
+                        <div class="notification-items">
+                            <div class="notification-item">
+                                <p class="notification-message">New comment on your post</p>
+                                <span class="notification-time">Today, 2:30 PM</span>
+                            </div>
+                            <div class="notification-item">
+                                <p class="notification-message">Your profile was viewed</p>
+                                <span class="notification-time">Today, 1:15 PM</span>
+                            </div>
+                            <div class="notification-item">
+                                <p class="notification-message">You have a new friend request</p>
+                                <span class="notification-time">Yesterday, 6:00 PM</span>
+                            </div>
+                            <div class="notification-item">
+                                <p class="notification-message">You have a new friend request</p>
+                                <span class="notification-time">Yesterday, 6:00 PM</span>
+                            </div>
+                            <div class="notification-item">
+                                <p class="notification-message">You have a new friend request</p>
+                                <span class="notification-time">Yesterday, 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="view-all-section">
+                            <hr>
+                            <button class="view-all-btn">View All</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="profile-dropdown mt-2">
+                    <div class="dropdown-btn">
+                        <img src="/assets/img/person1.jpeg" alt="Profile Picture"> 
+                        <span>Ahmed Abo dooh </span> 
+                        <span>&#9662;</span>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#"> Mohammed</a>
+                        <a href="#">ali</a>
+                        <a href="#">khaled </a>
+                    </div>
+                </div>
+
+
+                <div class="button-container top-bar-btn-3">
+                    <button class="button-top-bar-btn-pro change-lang" onclick="changeLanguage()">Language</button>
+                    <button class="button-top-bar-btn-pro logout-btn" onclick="logout()">Log Out</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!-- End of Top Bar -->
+    <!-- header End -->
+    <!-- section one start  -->
+    <div class="container-fluid">
+            <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="toggleBtn" class="toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <img src="/assets/img/logo.png" alt="" srcset="">
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" class="sidebar-link" data-page="home"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="#" class="sidebar-link" data-page="stats"><i class="fas fa-chart-line"></i><span>Stats</span></a></li>
+            <li><a href="#" class="sidebar-link" data-page="reports"><i class="fas fa-file-alt"></i><span>Reports</span></a></li>
+            <li><a href="#" class="sidebar-link" data-page="settings"><i class="fas fa-cogs"></i><span>Settings</span></a></li>
+            <li><a href="#" class="sidebar-link" data-page="users"><i class="fas fa-users"></i><span>Users</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <div id="home" class="page active">
+            <div class="row se-1-content">
+                <div class="col-12 col-md-3 watch-list">
+                    <div class="row g-0 mt-3 mb-3 justify-content-center">
+                        <div class="col-12 text-center">
+                            <h2>
+                                watch list
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <h6>Investors</h6>
+                        </div>
+                    </div>
+                    <div class="row g-0 ">
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore ">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <h6>Enterprenuers</h6>
+                        </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                        <div class="col-6 col-sm-6 logo-investor">
+                            <img src="/assets/img/person1.jpeg" alt="">
+                            <p>ahmed</p>
+                        </div>
+                        <div class="col-6 col-sm-6 mt-1 price-investore">
+                            <span class="price-project">5.256 $</span> <br>
+                            <span>200 %</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class=" col-md-6 table-2">
+                            <div class="row justify-content-center text-center Investor-side">
+                                <div class="col-12 col-md-12 ">
+                                    <h6>
+                                        Investor side
+                                    </h6>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">invest money</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">money returns</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">$$</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">invest money</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">money returns</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 border-b pb-2">
+                                    <span class="light-text-color">$$</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 pb-2">
+                                    <span class="light-text-color">invest money</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 pb-2">
+                                    <span class="light-text-color">money returns</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                                <div class="col-md-4 col-4 pb-2">
+                                    <span class="light-text-color">$$</span> <br>
+                                    <span>0.00$</span>
+                                </div>
+                            </div>
+                            <div class="row Investor-side justify-content-center text-center mt-1">
+                         <div class="col-12 col-md-12">
+                            <h6>
+                                enterprenuer side
+                            </h6>
+                        </div>
+                        <div class="col-md-4 col-4 pb-2">
+                            <span class="light-text-color">prposias</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                        <div class="col-md-4 col-4 pb-2">
+                            <span class="light-text-color">funds</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                        <div class="col-md-4 col-4  pb-2">
+                            <span class="light-text-color">raised</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                         </div>
+                            <div class="row Investor-side justify-content-center text-center mt-1">
+                         <div class="col-12 col-md-12">
+                            <h6>
+                                market side
+                            </h6>
+                        </div>
+                        <div class="col-md-4 col-4 pb-2">
+                            <span class="light-text-color">prposias</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                        <div class="col-md-4 col-4 pb-2">
+                            <span class="light-text-color">funds</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                        <div class="col-md-4 col-4  pb-2">
+                            <span class="light-text-color">raised</span> <br>
+                            <span>0.00$</span>
+                        </div>
+                         </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-12 chart-1">
+                                        <div class="mt-2" id="top_x_div" style="width: 340px; height: 245px; "></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-12 mt-3">
+                                        <div id="chart_div" style="width: 370px; height: 245px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div id="chart_div2"></div>
+                        </div>
+                    </div>
+                </div>
+                </div> 
+                
+                <div class="container-fluid Experience Experience-2 mb-5 animate-from-bottom mt-5">
+                    <div class="row mt-5">
+                        <div class="col-md-12 head-title">
+                            <h1>More Than 25 Years of Experience</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4 mb-5">
+                        <div class="col-md-3 col-6 Experience-nums">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-wallet mb-4 me-2"></i>
+                                <div>
+                                    <h1 data-target="100">1</h1>
+                                    <p>Total Fund</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 Experience-nums">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-wallet mb-4 me-2"></i>
+                                <div>
+                                    <h1 data-target="5000">1</h1>
+                                    <p>Total Fund</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 Experience-nums">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-wallet mb-4 me-2"></i>
+                                <div>
+                                    <h1 data-target="750">1</h1>
+                                    <p>Total Fund</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 Experience-nums">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-wallet mb-4 me-2"></i>
+                                <div>
+                                    <h1 data-target="2500">1</h1>
+                                    <p>Total Fund</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-12 title-main">
+                            <h2>Investement Sector</h2>
+                        </div>
+                    </div>
+
+
+
+                    <div class="custom-table-container3">
+
+
+
+<!-- الجدول الأول -->
+<div class="custom-table-13">
+    <h3 class="custom-table-title3">My Account</h3>
+    <div class="table-wrapper3 custom-table-133">
+        <table class="custom-table3 table-1">
+            <thead class="tehead1">
+                <tr>
+                    <th>Select</th>
+                    <th>ID</th>
+                    <th>Deposit</th>
+                    <th>Returns</th>
+                    <th>Profit</th>
+                    <th>Invest</th>
+                    <th>Re-invest</th>
+                    <th>Purchase</th>
+                    <th>Withdraw</th>
+                    <th>Balance</th>
+                    <th>Available</th>
+                    <th>Reserved</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الصف الأول -->
+                <tr>
+                    <td><input type="checkbox" class="toggle-checkbox" data-row="row-1"></td>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>200</td>
+                    <td>50</td>
+                    <td>25</td>
+                </tr>
+                <tr id="row-1" class="hidden-table">
+                    <td colspan="12">
+                        <!-- الجدول الفرعي الأول (الصف الأول) -->
+                        <table class="nested-table">
+                            <thead class="tehead1-n">
+                                <tr>
+                                    <th>Select</th>
+                                    <th>ID</th>
+                                    <th>Deposit</th>
+                                    <th>Returns</th>
+                                    <th>Profit</th>
+                                    <th>Invest</th>
+                                    <th>Re-invest</th>
+                                    <th>Purchase</th>
+                                    <th>Withdraw</th>
+                                    <th>Balance</th>
+                                    <th>Available</th>
+                                    <th>Reserved</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- صفين محتوى داخل الجدول الفرعي -->
+                                <tr>
+                                    <td>1.1</td>
+                                    <td>100</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td>50</td>
+                                    <td>20</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>200</td>
+                                    <td>50</td>
+                                    <td>25</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>1.2</td>
+                                    <td>150</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>60</td>
+                                    <td>25</td>
+                                    <td>40</td>
+                                    <td>20</td>
+                                    <td>250</td>
+                                    <td>60</td>
+                                    <td>30</td>
+                                    <td>30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- الصف الثاني -->
+                <tr>
+                    <td><input type="checkbox" class="toggle-checkbox" data-row="row-2"></td>
+                    <td>2</td>
+                    <td>200</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>100</td>
+                    <td>40</td>
+                    <td>60</td>
+                    <td>30</td>
+                    <td>400</td>
+                    <td>100</td>
+                    <td>50</td>
+                </tr>
+                <tr id="row-2" class="hidden-table">
+                    <td colspan="12">
+                        <!-- الجدول الفرعي الثاني (الصف الثاني) -->
+                        <table class="nested-table">
+                            <thead class="tehead1-n">
+                                <tr>
+                                    <th>Select</th>
+                                    <th>ID</th>
+                                    <th>Deposit</th>
+                                    <th>Returns</th>
+                                    <th>Profit</th>
+                                    <th>Invest</th>
+                                    <th>Re-invest</th>
+                                    <th>Purchase</th>
+                                    <th>Withdraw</th>
+                                    <th>Balance</th>
+                                    <th>Available</th>
+                                    <th>Reserved</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- صفين محتوى داخل الجدول الفرعي -->
+                                <tr>
+                                    <td>2.1</td>
+                                    <td>200</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>100</td>
+                                    <td>40</td>
+                                    <td>60</td>
+                                    <td>30</td>
+                                    <td>400</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>2.2</td>
+                                    <td>250</td>
+                                    <td>30</td>
+                                    <td>15</td>
+                                    <td>120</td>
+                                    <td>50</td>
+                                    <td>80</td>
+                                    <td>40</td>
+                                    <td>500</td>
+                                    <td>120</td>
+                                    <td>60</td>
+                                    <td>60</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+                        
+
+                        
+                       <!-- الجدول الثاني -->
+<div class="custom-table-23">
+    <h3 class="custom-table-title3">My Positions</h3>
+    <table class="custom-table3">
+        <thead class="tehead1">
+            <tr>
+                <th>Select</th>
+                <th>ID</th>
+                <th>Investors</th>
+                <th>Entrep</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" class="toggle-checkbox">
+                </td>
+                <td>1</td>
+                <td>Investor 1</td>
+                <td>Entrep 1</td>
+                <td>2024-12-01</td>
+            </tr>
+            <!-- الجدول الفرعي الأول -->
+            <tr class="hidden-table" style="display: none;">
+                <td colspan="5">
+                    <table class="nested-table">
+                        <thead class="tehead1-n">
+                            <tr>
+                                <th>ID</th>
+                                <th>Investors</th>
+                                <th>Entrep</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.1</td>
+                                <td>Sub Investor 1</td>
+                                <td>Sub Entrep 1</td>
+                                <td>2024-12-01</td>
+                            </tr>
+                            <tr>
+                                <td>1.2</td>
+                                <td>Sub Investor 2</td>
+                                <td>Sub Entrep 2</td>
+                                <td>2024-12-02</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="toggle-checkbox">
+                </td>
+                <td>2</td>
+                <td>Investor 2</td>
+                <td>Entrep 2</td>
+                <td>2024-12-02</td>
+            </tr>
+            <!-- الجدول الفرعي الثاني -->
+            <tr class="hidden-table" style="display: none;">
+                <td colspan="5">
+                    <table class="nested-table">
+                        <thead class="tehead1-n">
+                            <tr>
+                                <th>ID</th>
+                                <th>Investors</th>
+                                <th>Entrep</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2.1</td>
+                                <td>Sub Investor 1</td>
+                                <td>Sub Entrep 1</td>
+                                <td>2024-12-02</td>
+                            </tr>
+                            <tr>
+                                <td>2.2</td>
+                                <td>Sub Investor 2</td>
+                                <td>Sub Entrep 2</td>
+                                <td>2024-12-03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+
+
+        </div>
+
+
+        
+
+        
+        <div class="custom-table-wrapper44">
+            <!-- <h3 class="custom-table-title44">Custom Table with Grouped Columns</h3> -->
+            <table class="custom-table44">
+                <thead class="tehead1">
+                    <tr>
+                        <th>Checkbox</th>
+                        <th colspan="1">Group 1</th>
+                        <th colspan="4">Group 2</th>
+                        <th colspan="3">Group 3</th>
+                        <th colspan="2">Group 4</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 4</th>
+                        <th>Title 5</th>
+                        <th>Title 6</th>
+                        <th>Title 7</th>
+                        <th>Title 8</th>
+                        <th>Title 9</th>
+                        <th>Title 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="toggle-subtable44" />
+                        </td>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                        <td>Data 7</td>
+                        <td>Data 8</td>
+                        <td>Data 9</td>
+                        <td>Data 10</td>
+                    </tr>
+                    <tr class="hidden44">
+                        <td colspan="11">
+
+
+
+
+
+                            <table class="sub-table44">
+                                <thead class="tehead1-n">
+                                    <tr>
+                                        <th>ahmed 1</th>
+                                        <th>Title 2</th>
+                                        <th>Title 3</th>
+                                        <th>Title 4</th>
+                                        <th>Title 5</th>
+                                        <th>Title 6</th>
+                                        <th>Title 7</th>
+                                        <th>Title 8</th>
+                                        <th>Title 9</th>
+                                        <th>Title 10</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sub Data 1</td>
+                                        <td>Sub Data 2</td>
+                                        <td>Sub Data 3</td>
+                                        <td>Sub Data 4</td>
+                                        <td>Sub Data 5</td>
+                                        <td>Sub Data 6</td>
+                                        <td>Sub Data 7</td>
+                                        <td>Sub Data 8</td>
+                                        <td>Sub Data 9</td>
+                                        <td>Sub Data 10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub Data 11</td>
+                                        <td>Sub Data 12</td>
+                                        <td>Sub Data 13</td>
+                                        <td>Sub Data 14</td>
+                                        <td>Sub Data 15</td>
+                                        <td>Sub Data 16</td>
+                                        <td>Sub Data 17</td>
+                                        <td>Sub Data 18</td>
+                                        <td>Sub Data 19</td>
+                                        <td>Sub Data 20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+
+
+
+
+                        </td>
+                    </tr>
+                    <!-- الصف الثاني -->
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="toggle-subtable44" />
+                        </td>
+                        <td>Data 11</td>
+                        <td>Data 12</td>
+                        <td>Data 13</td>
+                        <td>Data 14</td>
+                        <td>Data 15</td>
+                        <td>Data 16</td>
+                        <td>Data 17</td>
+                        <td>Data 18</td>
+                        <td>Data 19</td>
+                        <td>Data 20</td>
+                    </tr>
+                    <tr class="hidden44">
+                        <td colspan="11">
+                            <table class="sub-table44">
+                                <thead class="tehead1-n">
+                                    <tr>
+                                        <th>Title 1</th>
+                                        <th>Title 2</th>
+                                        <th>Title 3</th>
+                                        <th>Title 4</th>
+                                        <th>Title 5</th>
+                                        <th>Title 6</th>
+                                        <th>Title 7</th>
+                                        <th>Title 8</th>
+                                        <th>Title 9</th>
+                                        <th>Title 10</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sub Data 21</td>
+                                        <td>Sub Data 22</td>
+                                        <td>Sub Data 23</td>
+                                        <td>Sub Data 24</td>
+                                        <td>Sub Data 25</td>
+                                        <td>Sub Data 26</td>
+                                        <td>Sub Data 27</td>
+                                        <td>Sub Data 28</td>
+                                        <td>Sub Data 29</td>
+                                        <td>Sub Data 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub Data 31</td>
+                                        <td>Sub Data 32</td>
+                                        <td>Sub Data 33</td>
+                                        <td>Sub Data 34</td>
+                                        <td>Sub Data 35</td>
+                                        <td>Sub Data 36</td>
+                                        <td>Sub Data 37</td>
+                                        <td>Sub Data 38</td>
+                                        <td>Sub Data 39</td>
+                                        <td>Sub Data 40</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="container">
+          <!-- Row containing both tables -->
+          <div class="row">
+            <!-- Table 1 -->
+            <div class="col-12 col-md-6 mt-3 My-Projects">
+              <h2> My Projects</h2>
+              <table class="table table-bordered table-border-radious">
+                <thead class="tehead1">
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Fund</th>
+                    <th>Invest</th>
+                    <th>Market</th>
+                  </tr>
+                </thead>
+                <tbody id="table77-body1">
+                  <tr>
+                    <td>1</td>
+                    <td>Fund A</td>
+                    <td>$5000</td>
+                    <td>$1000</td>
+                    <td>$20000</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Fund B</td>
+                    <td>$6000</td>
+                    <td>$1500</td>
+                    <td>$25000</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Fund C</td>
+                    <td>$7000</td>
+                    <td>$2000</td>
+                    <td>$30000</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Fund D</td>
+                    <td>$8000</td>
+                    <td>$2500</td>
+                    <td>$35000</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Fund E</td>
+                    <td>$9000</td>
+                    <td>$3000</td>
+                    <td>$40000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <nav> -->
+                <ul class="pagination" id="pagination77-1">
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(1, 1)">«</a></li>
+                  <li class="page-item active"><a class="page-link" href="javascript:void(0);" onclick="changePage(1, 1)">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(1, 2)">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(1, 3)">3</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(1, 4)">»</a></li>
+                </ul>
+              <!-- </nav> -->
+            </div>
+      
+            <!-- Table 2 -->
+            <div class="col-12 col-md-6 mt-3 pb-3">
+              <h2>My Pre-sale market</h2>
+              <table class="table table-bordered border-bottom-1  my-market">
+                <thead class="tehead1">
+                  <!-- First row for section titles -->
+                  <tr>
+                    <th></th> 
+                    <th colspan="2">Product</th>
+                    <th colspan="2">Offered Units</th>
+                    <th colspan="2">Sold Units</th>
+                  </tr>
+                  <!-- Second row for actual column headers -->
+                  <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>Volume</th>
+                    <th>Price</th>
+                    <th>Offered Units</th>
+                    <th>Total Price</th>
+                    <th>Sold Units</th>
+                  </tr>
+                </thead>
+                
+                <tbody id="table77-body2">
+                  <tr>
+                    <td>1</td>
+                    <td>Product 1</td>
+                    <td>100</td>
+                    <td>$50</td>
+                    <td>200</td>
+                    <td>$10000</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Product 3</td>
+                    <td>200</td>
+                    <td>$70</td>
+                    <td>300</td>
+                    <td>$21000</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Product 4</td>
+                    <td>250</td>
+                    <td>$80</td>
+                    <td>350</td>
+                    <td>$28000</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Product 5</td>
+                    <td>300</td>
+                    <td>$90</td>
+                    <td>400</td>
+                    <td>$36000</td>
+                    <td>350</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <nav> -->
+                <ul class="pagination  my-market-aro" id="pagination77-2">
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(2, 1)">«</a></li>
+                  <li class="page-item active"><a class="page-link" href="javascript:void(0);" onclick="changePage(2, 1)">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(2, 2)">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(2, 3)">3</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(2, 4)">»</a></li>
+                </ul>
+              <!-- </nav> -->
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div class="container Company1">
+          <table class="Company2">
+            <thead>
+              <tr>
+                <th>Prop. No</th>
+                <th>Prp. Name</th>
+                <th>Company</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Price</th>
+                <th>Owner</th>
+                <th>Area</th>
+                <th>Type</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="table-body1">
+              <!-- Dynamic rows will be added here -->
+            </tbody>
+          </table>
+          <div class="pagination" id="pagination1">
+            <!-- Pagination buttons will be added here -->
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal-overlay" id="modal-overlay1"></div>
+        <div class="modal" id="rate-modal1">
+          <h2>Rate Property</h2>
+          <label for="rating1">Rating (1-10)</label>
+          <input type="number" id="rating1" min="1" max="10">
+        
+          <label for="pre-evaluation1">Pre-Evaluation ($)</label>
+          <input type="number" id="pre-evaluation1">
+        
+          <label for="comment1">Comment</label>
+          <textarea id="comment1" rows="3"></textarea>
+        
+          <button id="submit-rating1" class="main-btn-dark-2">Submit</button>
+          <button class="close" id="close-modal1">Close</button>
+        </div>
+        
+        <!-- Alert -->
+        <div class="alert" id="alert-box1">Invalid Input</div>
+        
+        <div class="container85 Announcements">
+            <div class="announcement-title85">Announcements</div>
+            <ul class="announcement-list85" id="announcement-list85">
+              <!-- Dynamic announcements here -->
+            </ul>
+            <div class="pagination85" id="pagination85">
+              <!-- Pagination buttons here -->
+            </div>
+          </div>
+          
+        </div>
+        <div id="stats" class="page">
+            <h1>Stats</h1>
+            <p>Here are your statistics.</p>
+        </div>
+        <div id="reports" class="page">
+            <h1>Reports</h1>
+            <p>These are your reports.</p>
+        </div>
+        <div id="settings" class="page">
+            <h1>Settings</h1>
+            <p>Manage your settings here.</p>
+        </div>
+        <div id="users" class="page">
+            <h1>Users</h1>
+            <p>Manage your users here.</p>
+        </div>
+    </div>
+    </div>
+    <!-- section one End -->
+<!-- Custom JS -->
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+  let notificationCount = 3;
+
+function updateNotificationCount() {
+    const notificationItems = document.querySelectorAll('.notification-item');
+    notificationCount = notificationItems.length;
+    document.getElementById('notificationCount').innerText = notificationCount;
+}
+
+function toggleNotifications() {
+    const notificationList = document.getElementById('notificationList');
+    if (notificationList.classList.contains('open')) {
+        notificationList.classList.remove('open');
+    } else {
+        notificationList.classList.add('open');
+    }
+}
+
+function addNotification(message, time) {
+    const notificationItems = document.querySelector('.notification-items');
+    const newNotification = document.createElement('div');
+    newNotification.classList.add('notification-item');
+    newNotification.innerHTML = `<p class="notification-message">${message}</p><span class="notification-time">${time}</span>`;
+    notificationItems.prepend(newNotification);
+
+    updateNotificationCount();
+}
+
+updateNotificationCount();
+
+addNotification("You have a new notification!", "Today, 7:00 PM");
+addNotification("You have a new notification!", "Today, 7:00 PM");
+// ------------------------------------------------
+let isEnglish = true;
+
+    function changeLanguage() {
+        const languageButton = document.querySelector('.change-lang');
+        
+        if (isEnglish) {
+            languageButton.innerHTML = ' Russian';
+        } else {
+            languageButton.innerHTML = 'English';
+        }
+        
+        isEnglish = !isEnglish;
+    }
+
+    function logout() {
+        alert('Logging out...');
+    }
+// ---------------------------------------
+const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const links = document.querySelectorAll('.sidebar-link');
+        const pages = document.querySelectorAll('.page');
+
+        // Toggle sidebar
+        toggleBtn.addEventListener('click', function () {
+            sidebar.classList.toggle('collapsed');
+        });
+
+        // Handle page switching
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const pageId = this.getAttribute('data-page');
+
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
+
+                document.getElementById(pageId).classList.add('active');
+            });
+        });
+        // ------------------------------------
+        
+</script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+      var data = new google.visualization.arrayToDataTable([
+        ['Move', 'Percentage'],
+        ["King's pawn (e4)", 44],
+        ["Queen's pawn (d4)", 31],
+        ["Knight to King 3 (Nf3)", 12],
+        ["Queen's bishop pawn (c4)", 10],
+        ['Other', 3]
+      ]);
+
+      var options = {
+        width: 370,
+        legend: { position: 'none' },
+        chart: {
+          title: 'Chess opening moves',
+        //   subtitle: 'popularity by percentage'
+         },
+        axes: {
+          x: {
+            0: { side: 'top', label: ''} // Top x-axis.
+          }
+        },
+        bar: { groupWidth: "90%" }
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+      // Convert the Classic options to Material options.
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+
+    // -----------------------charts-2-------------------------------
+    google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2013',  1000,      400],
+          ['2014',  1170,      460],
+          ['2015',  660,       1120],
+          ['2016',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+// ----------------------chart-3------------------------
+  </script>
+  <script type="text/javascript">
+
+google.charts.load('current', {'packages':['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+
+      var button = document.getElementById('change-chart');
+      var chartDiv = document.getElementById('chart_div2');
+
+      var data = google.visualization.arrayToDataTable([
+        ['Galaxy', 'Distance', 'Brightness'],
+        ['Canis Major Dwarf', 8000, 23.3],
+        ['Sagittarius Dwarf', 24000, 4.5],
+        ['Ursa Major II Dwarf', 30000, 14.3],
+        ['Lg. Magellanic Cloud', 50000, 0.9],
+        ['Bootes I', 60000, 13.1]
+      ]);
+
+      var materialOptions = {
+        chart: {
+          title: 'Nearby galaxies',
+          subtitle: 'distance on the left, brightness on the right'
+        },
+        series: {
+          0: { targetAxisIndex: 0 }, // Bind series 0 to an axis named 'distance'.
+          1: { targetAxisIndex: 1 } // Bind series 1 to an axis named 'brightness'.
+        },
+        vAxes: {
+          0: { title: 'parsecs' },
+          1: { title: 'apparent magnitude' }
+        }
+        // No width specified here, controlled by CSS
+      };
+
+      var classicOptions = {
+        series: {
+          0: {targetAxisIndex: 0},
+          1: {targetAxisIndex: 1}
+        },
+        title: 'Nearby galaxies - distance on the left, brightness on the right',
+        vAxes: {
+          0: {title: 'parsecs'},
+          1: {title: 'apparent magnitude'}
+        }
+        // No width specified here, controlled by CSS
+      };
+
+      function drawMaterialChart() {
+        var materialChart = new google.charts.Bar(chartDiv);
+        materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
+        button.innerText = 'Change to Classic';
+        button.onclick = drawClassicChart;
+      }
+
+      function drawClassicChart() {
+        var classicChart = new google.visualization.ColumnChart(chartDiv);
+        classicChart.draw(data, classicOptions);
+        button.innerText = 'Change to Material';
+        button.onclick = drawMaterialChart;
+      }
+
+      drawMaterialChart();
+    }
+// ---------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll('.Experience-nums h1');
+
+    const startCounting = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const step = Math.ceil(target / 100); // تقسيم الهدف إلى خطوات صغيرة
+        let count = 0;
+
+        const updateCounter = () => {
+            count += step;
+            if (count > target) {
+                count = target;
+            }
+            counter.textContent = count.toLocaleString(); // عرض الرقم بفواصل
+            if (count < target) {
+                setTimeout(updateCounter, 80); // تكرار التحديث كل 20 مللي ثانية
+            }
+        };
+
+        updateCounter();
+    };
+
+    const isVisible = (element) => {
+        const rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    };
+
+    const handleScroll = () => {
+        counters.forEach(counter => {
+            if (isVisible(counter) && !counter.classList.contains('counted')) {
+                counter.classList.add('counted');
+                startCounting(counter);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // لتشغيل العداد إذا كانت العناصر مرئية عند تحميل الصفحة
+});
+// ------------------------------
+// استهداف جميع التشيك بوكسات الرئيسية
+const checkboxes = document.querySelectorAll('.toggle-checkbox');
+
+// إضافة حدث عند تغيير حالة التشيك بوكس
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+        const rowId = this.getAttribute('data-row');  // الحصول على الـ id للصف
+        const row = document.getElementById(rowId);  // استهداف الصف المخفي بناءً على id
+        if (this.checked) {
+            row.style.display = 'table-row';  // إظهار الصف
+        } else {
+            row.style.display = 'none';  // إخفاء الصف
+        }
+    });
+});
+// --------------------------------------------
+document.querySelectorAll('.toggle-checkbox').forEach((checkbox) => {
+    checkbox.addEventListener('change', function () {
+        const row = this.closest('tr');
+        const nestedTable = row.nextElementSibling;
+
+        if (nestedTable && nestedTable.classList.contains('hidden-table')) {
+            nestedTable.style.display = this.checked ? 'table-row' : 'none';
+        }
+    });
+});
+// -----------------------------------------------
+document.querySelectorAll('.toggle-subtable44').forEach((checkbox) => {
+            checkbox.addEventListener('change', function () {
+                const row = this.closest('tr').nextElementSibling;
+                if (this.checked) {
+                    row.querySelector('.sub-table44').style.display = 'table';
+                } else {
+                    row.querySelector('.sub-table44').style.display = 'none';
+                }
+            });
+        });
+// --------------------------
+$(document).ready(function(){
+  $('#myTable').pageMe({
+    pagerSelector:'#myPager',
+    activeColor: 'blue',
+    prevText:'Anterior',
+    nextText:'Siguiente',
+    showPrevNext:true,
+    hidePageNumbers:false,
+    perPage:10
+  });
+});
+  </script>
+  
+   <script>
+    // Data for Table 1
+    const table77Data1 = [
+      { id: 1, name: 'Fund A', fund: '$5000', invest: '$1000', market: '$20000' },
+      { id: 2, name: 'Fund B', fund: '$6000', invest: '$1500', market: '$25000' },
+      { id: 3, name: 'Fund C', fund: '$7000', invest: '$2000', market: '$30000' },
+      { id: 4, name: 'Fund D', fund: '$8000', invest: '$2500', market: '$35000' },
+      { id: 5, name: 'Fund E', fund: '$9000', invest: '$3000', market: '$40000' },
+      { id: 5, name: 'Fund E', fund: '$9000', invest: '$3000', market: '$40000' },
+    ];
+
+    // Data for Table 2
+    const table77Data2 = [
+      { id: 1, product: 'Product 1', volume: '100', price: '$50', offeredUnits: '200', totalPrice: '$10000', soldUnits: '150' },
+      { id: 2, product: 'Product 2', volume: '150', price: '$60', offeredUnits: '250', totalPrice: '$15000', soldUnits: '200' },
+      { id: 3, product: 'Product 3', volume: '200', price: '$70', offeredUnits: '300', totalPrice: '$21000', soldUnits: '250' },
+      { id: 4, product: 'Product 4', volume: '250', price: '$80', offeredUnits: '350', totalPrice: '$28000', soldUnits: '300' },
+      { id: 5, product: 'Product 5', volume: '300', price: '$90', offeredUnits: '400', totalPrice: '$36000', soldUnits: '350' },
+      { id: 5, product: 'Product 5', volume: '300', price: '$90', offeredUnits: '400', totalPrice: '$36000', soldUnits: '350' },
+    ];
+
+    // Function to change pages for both tables
+    function changePage(table, page) {
+      let data, rowsPerPage, startIndex, endIndex;
+
+      if (table === 1) {
+        data = table77Data1;
+        rowsPerPage = 3;
+      } else {
+        data = table77Data2;
+        rowsPerPage = 2;
+      }
+
+      startIndex = (page - 1) * rowsPerPage;
+      endIndex = startIndex + rowsPerPage;
+
+      // Slice the data to only show the correct rows
+      const paginatedData = data.slice(startIndex, endIndex);
+
+      // Update the table's body with the paginated data
+      const tableBody = document.getElementById(`table77-body${table}`);
+      tableBody.innerHTML = '';
+
+      paginatedData.forEach(row => {
+        const tr = document.createElement('tr');
+        for (const key in row) {
+          const td = document.createElement('td');
+          td.textContent = row[key];
+          tr.appendChild(td);
+        }
+        tableBody.appendChild(tr);
+      });
+
+      // Update the pagination links
+      const pagination = document.getElementById(`pagination77-${table}`);
+      const pages = Math.ceil(data.length / rowsPerPage);
+      let paginationLinks = '';
+
+      for (let i = 1; i <= pages; i++) {
+        paginationLinks += `<li class="page-item ${i === page ? 'active' : ''}">
+          <a class="page-link" href="javascript:void(0);" onclick="changePage(${table}, ${i})">${i}</a>
+        </li>`;
+      }
+      pagination.innerHTML = `<li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(${table}, ${page - 1 <= 0 ? 1 : page - 1})">«</a></li>
+      ${paginationLinks}
+      <li class="page-item"><a class="page-link" href="javascript:void(0);" onclick="changePage(${table}, ${page + 1 > pages ? pages : page + 1})">»</a></li>`;
+    }
+
+    // Initialize tables
+    changePage(1, 1);
+    changePage(2, 1);
+  </script>
+<script>
+const tableData1 = [
+  { propNo: 1, prpName: "Property 1", company: "Company A", address: "123 Street", status: "Available", price: "$1000", owner: "Owner 1", area: "200 sqft", type: "Apartment" },
+  { propNo: 2, prpName: "Property 2", company: "Company B", address: "456 Street", status: "Sold", price: "$1500", owner: "Owner 2", area: "300 sqft", type: "House" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "ahmed 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "ahmed 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "ahmed 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "ahmed 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "ahmed 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "aboooo 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "aboooo 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "aboooo 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "aboooo 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "aboooo 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  { propNo: 3, prpName: "Property 3", company: "Company C", address: "789 Street", status: "Pending", price: "$2000", owner: "Owner 3", area: "400 sqft", type: "Villa" },
+  // Add more rows as needed
+];
+
+const rowsPerPage = 5;
+const tableBody1 = document.getElementById('table-body1');
+const pagination1 = document.getElementById('pagination1');
+const modal1 = document.getElementById('rate-modal1');
+const modalOverlay1 = document.getElementById('modal-overlay1');
+const alertBox1 = document.getElementById('alert-box1');
+
+function showModal1() {
+  modal1.style.display = 'block';
+  modalOverlay1.style.display = 'block';
+}
+
+function closeModal1() {
+  modal1.style.display = 'none';
+  modalOverlay1.style.display = 'none';
+}
+
+function showAlert1(message) {
+  alertBox1.textContent = message;
+  alertBox1.style.display = 'block';
+  setTimeout(() => alertBox1.style.display = 'none', 3000);
+}
+
+function changePage1(page) {
+  const startIndex = (page - 1) * rowsPerPage;
+  const endIndex = startIndex + rowsPerPage;
+  const paginatedData = tableData1.slice(startIndex, endIndex);
+
+  tableBody1.innerHTML = '';
+  paginatedData.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.propNo}</td>
+      <td>${row.prpName}</td>
+      <td>${row.company}</td>
+      <td>${row.address}</td>
+      <td>${row.status}</td>
+      <td>${row.price}</td>
+      <td>${row.owner}</td>
+      <td>${row.area}</td>
+      <td>${row.type}</td>
+      <td>
+        <button class="main-btn-dark-4 main-btn-dark" id="rate-button1" onclick="showModal1()">Rate</button>
+        <button class="main-btn-dark-2 main-btn-dark-4" id="view-button1" onclick="alert('View Property')">View</button>
+      </td>
+    `;
+    tableBody1.appendChild(tr);
+  });
+
+  pagination1.innerHTML = '';
+  const totalPages = Math.ceil(tableData1.length / rowsPerPage);
+  for (let i = 1; i <= totalPages; i++) {
+    const button = document.createElement('button');
+    button.textContent = i;
+    if (i === page) {
+      button.className = 'active';
+    } else {
+      button.className = 'main-btn-dark-3';
+    }
+    button.onclick = () => changePage1(i);
+    pagination1.appendChild(button);
+  }
+}
+
+document.getElementById('submit-rating1').addEventListener('click', () => {
+  const rating = document.getElementById('rating1').value;
+  if (rating < 1 || rating > 10) {
+    showAlert1('Rating must be between 1 and 10');
+    return;
+  }
+  closeModal1();
+  showAlert1('Rating submitted successfully!');
+});
+
+document.getElementById('close-modal1').addEventListener('click', closeModal1);
+modalOverlay1.addEventListener('click', closeModal1);
+
+changePage1(1);
+
+  </script>
+  
+  <script>
+    // مصفوفة الإعلانات التي ستتم إضافة الإعلانات لها يدويًا
+    const announcements85 = [];
+  
+    const rowsPerPage85 = 5;
+    const announcementList85 = document.getElementById('announcement-list85');
+    const pagination85 = document.getElementById('pagination85');
+  
+    // دالة لعرض الإعلانات
+    function renderPage85(page85) {
+      const startIndex85 = (page85 - 1) * rowsPerPage85;
+      const endIndex85 = startIndex85 + rowsPerPage85;
+      const visibleAnnouncements85 = announcements85.slice(startIndex85, endIndex85);
+  
+      // مسح الإعلانات السابقة
+      announcementList85.innerHTML = '';
+  
+      // إضافة الإعلانات المتاحة في الصفحة الحالية
+      visibleAnnouncements85.forEach(({ text85, date85 }) => {
+        const li85 = document.createElement('li');
+        li85.className = 'announcement-item85';
+        li85.innerHTML = `
+          <div class="announcement-text85">${text85}</div>
+          <div class="announcement-date85">${date85}</div>
+        `;
+        announcementList85.appendChild(li85);
+      });
+  
+      // عرض أزرار التصفح
+      renderPagination85(page85);
+    }
+  
+    // دالة لعرض أزرار التصفح
+    function renderPagination85(currentPage85) {
+      const totalPages85 = Math.ceil(announcements85.length / rowsPerPage85);
+  
+      // مسح الأزرار السابقة
+      pagination85.innerHTML = '';
+  
+      // زر السابق
+      const prevButton85 = document.createElement('button');
+      prevButton85.innerHTML = '<span class="material-icons">arrow_back</span>';
+      prevButton85.disabled = currentPage85 === 1;
+      prevButton85.onclick = () => renderPage85(currentPage85 - 1);
+      pagination85.appendChild(prevButton85);
+  
+      // أزرار التصفح
+      for (let i85 = 1; i85 <= totalPages85; i85++) {
+        const button85 = document.createElement('button');
+        button85.textContent = i85;
+        button85.className = i85 === currentPage85 ? 'active85' : '';
+        button85.onclick = () => renderPage85(i85);
+        pagination85.appendChild(button85);
+      }
+  
+      // زر التالي
+      const nextButton85 = document.createElement('button');
+      nextButton85.innerHTML = '<span class="material-icons">arrow_forward</span>';
+      nextButton85.disabled = currentPage85 === totalPages85;
+      nextButton85.onclick = () => renderPage85(currentPage85 + 1);
+      pagination85.appendChild(nextButton85);
+    }
+  
+    // إضافة إعلان يدويًا إلى المصفوفة
+    // هنا يمكنك إضافة الإعلانات بالطريقة التالية:
+    announcements85.push({ text85: 'First Announcement', date85: '2024-12-01' });
+    announcements85.push({ text85: 'Second Announcement', date85: '2024-12-02' });
+    announcements85.push({ text85: 'Third Announcement', date85: '2024-12-03' });
+    announcements85.push({ text85: 'Fourth Announcement', date85: '2024-12-04' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+    announcements85.push({ text85: 'Fifth Announcement', date85: '2024-12-05' });
+  
+    // بداية عرض الصفحة
+    renderPage85(1);
+  </script>
+</body>
+</html>

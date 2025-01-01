@@ -363,3 +363,4 @@ function adjustButtonsPosition() {
 // تشغيل الدالة عند تحميل الصفحة أو تغيير حجم الشاشة
 window.addEventListener("resize", adjustButtonsPosition);
 window.addEventListener("DOMContentLoaded", adjustButtonsPosition);
+// ---------------------------------------------
